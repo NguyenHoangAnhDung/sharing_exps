@@ -1,0 +1,5 @@
+class AddSubTitleToPosts < ActiveRecord::Migration[5.0]
+  def change
+    add_column :posts, :sub_title, :string
+  end
+end
