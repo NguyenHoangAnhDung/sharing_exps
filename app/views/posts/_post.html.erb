@@ -1,0 +1,14 @@
+<div class="post-preview" data-id="<%= post.id %>">
+  <%= link_to post do %>
+    <h2 class="post-title">
+      <%= post.id %> <%= post.title %>
+    </h2>
+    <h3 class="post-subtitle">
+      <%= post.content %>
+    </h3>
+  <% end %>
+  <p class="post-meta">Posted by
+    <%= link_to post.user.name, post.user %>
+    on <%= l post.created_at, format: :long_day %></p>
+</div>
+<hr>
