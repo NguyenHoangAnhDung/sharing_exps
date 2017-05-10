@@ -41,6 +41,7 @@ gem "bootstrap-sass"
 gem "pry"
 gem "font-awesome-rails"
 gem "faker"
+gem "ckeditor"
 
 group :production do
   gem 'rails_12factor'
