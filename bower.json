@@ -1,0 +1,21 @@
+{
+  "name": "sharing_exps",
+  "homepage": "https://github.com/NguyenHoangAnhDung/sharing_exps",
+  "authors": [
+    "NguyenHoangAnhDung <nguyen.hoang.anh.dung@framgia.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

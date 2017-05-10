@@ -1,11 +1,12 @@
 <% provide :title, "All posts" %>
 <%= render "layouts/site_header" %>
-<div class="container">
+<div class="container" ng-controller="postCtrl as ajs">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="container-post">
         <%= render @posts %>
       </div>
+      <button ng-click="ajs.test()">123321231231</button>
       <ul class="pager">
         <li class="next">
         <%= image_tag "ajax-loader.jpg", style: "display: none;", class: "loading-gif" %>

@@ -6,9 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag :angular_mypage %>
   </head>
 
-  <body>
+  <body ng-app="myPageApp">
     <%= render "layouts/header" %>
     <%= render "common/error_messages" %>
     <%= yield %>
