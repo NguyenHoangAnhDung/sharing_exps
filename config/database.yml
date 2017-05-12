@@ -14,8 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 
 development:
   <<: *default
@@ -51,4 +50,4 @@ production:
   <<: *default
   database: sharing-exps_production
   username: sharing-exps
-  password: <%= ENV['SHARING-EXPS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
