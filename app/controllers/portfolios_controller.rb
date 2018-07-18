@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -30,7 +32,7 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find params[:id]
-    
+
     respond_to do |format|
       if @portfolio_item.update(prortfolio_params)
         format.html { redirect_to portfolios_path, notice: "The record successfully updated." }
@@ -54,7 +56,7 @@ class PortfoliosController < ApplicationController
   end
 
   private
-  
+
   def prortfolio_params
     params.require(:portfolio)
       .permit(:title, :subtitle, :body, technologies_attributes: [:name])
